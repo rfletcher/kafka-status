@@ -19,7 +19,7 @@ Usage
 1. Set the script to be executable
 
 ```
-chmod +x kafka_status.rb
+chmod +x cli.rb
 ```
 
 2. Place the script somewhere like `/usr/local/bin/kafka_status`

@@ -5,7 +5,7 @@
 
 require 'rubygems'
 require 'trollop'
-require 'lib/status'
+require_relative 'lib/status'
 
 SUB_COMMANDS = %w(status consumer_lag)
 global_opts = Trollop::options do
@@ -27,7 +27,7 @@ cmd_opts = case cmd
       opt :verbose, "Verbose output?", :required => false
     end
   else
-    Trollop::die "Use status or consumer_lag"
+    Trollop::die "kafka-status: Use status or consumer_lag"
   end
 
 

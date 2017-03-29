@@ -1,6 +1,6 @@
 # # consumer.rb
 
-require 'lib/zookeeper'
+require_relative 'zookeeper'
 require 'simple-graphite'
 
 def underscore(metric)
@@ -128,5 +128,5 @@ def consumer_lag()
     consumer_group_data.each do | topic_name, topic_data |
       partition_consumer_data(consumer_group_name, topic_name, topic_data)
     end
-  end 
+  end
 end

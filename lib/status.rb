@@ -1,8 +1,8 @@
 # status.rb
 
-require 'lib/zookeeper'
-require 'lib/broker'
-require 'lib/consumer'
+require_relative './zookeeper'
+require_relative './broker'
+require_relative './consumer'
 
 def kafka_status()
 

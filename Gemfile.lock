@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json (2.0.3)
+    simple-graphite (2.1.0)
+    trollop (2.1.2)
+    zk (1.9.6)
+      zookeeper (~> 1.4.0)
+    zookeeper (1.4.11)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json
+  simple-graphite
+  trollop
+  zk
+  zookeeper
+
+BUNDLED WITH
+   1.13.6
