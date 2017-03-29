@@ -16,15 +16,21 @@ How it works
 Usage
 -----
 
-1. Set the script to be executable
+1. Install dependencies (requires ruby and bundler)
+
+```sh
+bundle install
+```
+
+2. Set the script to be executable
 
 ```
 chmod +x cli.rb
 ```
 
-2. Place the script somewhere like `/usr/local/bin/kafka_status`
+3. Place the script somewhere like `/usr/local/bin/kafka_status`
 
-3. Run the script, e.g.
+4. Run the script, e.g.
 
 ```
 bburton@lookout-kafka-bburton-2:~$ /usr/local/bin/kafka_status
