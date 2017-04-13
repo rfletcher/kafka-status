@@ -13,7 +13,12 @@ global_opts = Trollop::options do
   stop_on SUB_COMMANDS
 end
 
-cmd = ARGV.shift # get the subcommand
+if ARGV.first == nil || ARGV.first.start_with?( "-" )
+  cmd = "status"
+else
+  cmd = ARGV.shift
+end
+
 cmd_opts = case cmd
   when "status"
     Trollop::options do
