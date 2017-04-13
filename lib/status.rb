@@ -7,6 +7,7 @@ require_relative './consumer'
 def kafka_status()
 
   kafka_cluster_name = get_kafka_cluster_name
+  p get_kafka_cluster_name
 
   zk, zookeeper_cluster_hosts = connect_to_zookeeper()
   broker_ids = get_broker_ids(zk)

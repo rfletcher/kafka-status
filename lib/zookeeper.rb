@@ -9,6 +9,7 @@ def connect_to_zookeeper()
 
   # find out what zookeeper cluster this kafka broker uses
   zookeeper_cluster_hosts = File.read($kafka_config).split("\n").grep(/zookeeper\.connect/)[0].split('=')[1]
+  p zookeeper_cluster_hosts
   zk = ZK.new(zookeeper_cluster_hosts)
   zk.wait_until_connected(30)
 
